@@ -5,6 +5,7 @@
 * [어플리케이션 설정](#어플리케이션-설정)
   * [ExelBid SDK 추가하기](#exelbid-sdk-추가하기)
 * [광고 적용하기](#광고-적용하기)
+  * [앱 아이디 등록](#앱-아이디-등록)
   * [인스턴스 공통 메소드](#인스턴스-공통-메소드)
   * [배너광고](#배너광고)
   * [전면 광고](#전면-광고)
@@ -64,6 +65,23 @@
  	
 
 ## 광고 적용하기
+
+### 앱 아이디 등록
+
+> 홈페이지에서 발급받은 App ID 를 최초 한번 등록합니다.
+
+*	setEBAppId(NSString) : 홈페이지에서 발급받은 App ID
+
+ ```
+	#import <ExelBidSDK/ExelBidSDK.h>
+
+	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  	 
+   	 [ExelBidKit setEBAppId:@“앱 아이디”];
+
+ 	 return YES;
+	}
+  ```
 
 ### 인스턴스 공통 메소드
 
@@ -317,5 +335,4 @@
     ```
     [self.placer loadAdsForAdUnitID:”유닛아이디” targeting:”EBNativeAdRequestTargeting 객체”];
     ```
-    
     
