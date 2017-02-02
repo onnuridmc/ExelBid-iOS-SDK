@@ -44,7 +44,7 @@
 	platform :ios, '8.0'
 
 	target 'TargetName' do
-	pod ‘ExelBidSDK’
+	pod ‘ExelBid_iOS’
 	end
   ```
 
