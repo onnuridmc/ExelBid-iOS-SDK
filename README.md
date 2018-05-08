@@ -140,7 +140,7 @@
 5. 너비 100%의 가운데 정렬 배너일 경우 아래와 같이 메소드를 추가할 수 있습니다. (SDK Version. 1.3.2)
 
   ```object-c
-  setTesting(BOOL)
+  setFullWebView(BOOL)
   ```
 
 ## 전면 광고
