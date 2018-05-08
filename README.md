@@ -63,7 +63,7 @@
 
 ### Xcode 설정하기 (iOS9 이상)
 
-> 해당 프로젝트 info.plist 에서 ‘App Transport Security Settings’ 속성을 추가 해주세요.
+>해당 프로젝트 info.plist 에서 ‘App Transport Security Settings’ 속성을 추가 해주세요.
 하위 아이템으로 ‘Allow Arbitrary Loads’ 추가 후 값은 ‘YES’로 설정하십시오.
 
  ![unit id](./img/sdk-1.png)
@@ -139,7 +139,7 @@
 
 5. AdView 안에 너비 100%로 웹뷰가 바인딩되게 설정하려면 아래와 같이 메소드를 추가할 수 있습니다. (SDK Version. 1.3.2)
 
-  > 기본 상태는 설정된 광고사이즈로 센터정렬되어 바인딩 된다.
+  > 기본 상태는 설정된 광고사이즈로 센터정렬되어 바인딩 된다.
 
   ```object-c
   setFullWebView(BOOL)
