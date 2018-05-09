@@ -14,6 +14,9 @@
   * [네이티브 Adapter](#네이티브-adapter)
 
 ## Version History
+**Version 1.3.2**
+  * _배너의 설정된 사이즈가 아닌 전체 Screen 전체 사이즈로 바인딩 될 수 있게 설정 가능한 Method 추가_
+
 **Version 1.2.0**
   * _방송통신위원회 시행령 '온라인 맞춤형 광고 개인정보보호 가이드라인' 에 따라서 네이티브 nativePrivacyInformationIconImageView 관련  추가 안내_
 
