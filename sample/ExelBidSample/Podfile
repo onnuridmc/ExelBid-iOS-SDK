@@ -8,6 +8,6 @@ target 'ExelBidSample' do
   # Pods for ExelBidSample
 
 
-#pod “ExelBid_iOS”
+pod “ExelBid_iOS”
 
 end
