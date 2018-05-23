@@ -51,7 +51,8 @@
     self.adView.delegate = self;
     [self.adView setYob:@"1976"];
     [self.adView setGender:@"M"];
-//    [self.adView setTesting:YES];
+    [self.adView setTesting:NO];
+    [self.adView setFullWebView:YES];
     [_adViewContainer addSubview:self.adView];
      [self.adView loadAd];
     
