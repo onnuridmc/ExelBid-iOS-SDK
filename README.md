@@ -14,6 +14,9 @@
   * [네이티브 Adapter](#네이티브-adapter)
 
 ## Version History
+**Version 1.3.3**
+  * _iOS 11 버전 대응 (Safe Area 적용)_
+
 **Version 1.3.2**
   * _배너의 설정된 사이즈가 아닌 전체 Screen 전체 사이즈로 바인딩 될 수 있게 설정 가능한 Method 추가_
 
