@@ -14,6 +14,9 @@
   * [네이티브 Adapter](#네이티브-adapter)
 
 ## Version History
+**Version 1.3.4**
+  * _Archive시 bitcode 설정 이슈 해결_
+
 **Version 1.3.3**
   * _iOS 11 버전 대응 (Safe Area 적용)_
 
