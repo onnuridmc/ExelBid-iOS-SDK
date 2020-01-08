@@ -14,6 +14,9 @@
   * [네이티브 Adapter](#네이티브-adapter)
 
 ## Version History
+**Version 1.3.5**
+  * _iOS 13 ViewController issue 대응_
+
 **Version 1.3.4**
   * _Archive시 bitcode 설정 이슈 해결_
 
