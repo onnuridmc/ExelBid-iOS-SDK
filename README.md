@@ -14,6 +14,9 @@
   * [네이티브 Adapter](#네이티브-adapter)
 
 ## Version History
+**Version 1.3.8**
+  * _UIWebView 사용 종료에 따른 WkWebView 로의 교체 대응 및 오류 FIX_
+
 **Version 1.3.5**
   * _iOS 13 ViewController issue 대응_
 
