@@ -16,7 +16,7 @@
 
 ## Version History
 
-**Version 1.3.15**
+**Version 1.3.16**
 - _framework -> 미디에이션 기능 적용 (Exelbid, Adfit, Admob, Fan)_
 
 **Version 1.3.11**
