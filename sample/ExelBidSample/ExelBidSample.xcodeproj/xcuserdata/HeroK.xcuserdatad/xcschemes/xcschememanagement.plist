@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ExelBidSample.xcscheme</key>
+		<key>ExelbidSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>64A197081E07A7E100095CAA</key>
+		<key>641269341DBDA31500A7F514</key>
 		<dict>
 			<key>primary</key>
 			<true/>

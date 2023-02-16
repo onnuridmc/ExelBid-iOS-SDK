@@ -7,378 +7,413 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64A1970E1E07A7E100095CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1970D1E07A7E100095CAA /* main.m */; };
-		64A197111E07A7E100095CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197101E07A7E100095CAA /* AppDelegate.m */; };
-		64A197171E07A7E100095CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A197151E07A7E100095CAA /* Main.storyboard */; };
-		64A197191E07A7E100095CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A197181E07A7E100095CAA /* Assets.xcassets */; };
-		64A1971C1E07A7E100095CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A1971A1E07A7E100095CAA /* LaunchScreen.storyboard */; };
-		64A197861E07ACC000095CAA /* EBAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1975F1E07ACC000095CAA /* EBAdTableViewController.m */; };
-		64A197871E07ACC000095CAA /* EBBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197611E07ACC000095CAA /* EBBannerAdViewController.m */; };
-		64A197881E07ACC000095CAA /* EBDialogAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197631E07ACC000095CAA /* EBDialogAdViewController.m */; };
-		64A197891E07ACC000095CAA /* EBFrontBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197651E07ACC000095CAA /* EBFrontBannerAdViewController.m */; };
-		64A1978A1E07ACC000095CAA /* EBNativeAdCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197671E07ACC000095CAA /* EBNativeAdCollectionViewController.m */; };
-		64A1978B1E07ACC000095CAA /* EBNativeAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197691E07ACC000095CAA /* EBNativeAdTableViewController.m */; };
-		64A1978C1E07ACC000095CAA /* EBNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1976B1E07ACC000095CAA /* EBNativeAdViewController.m */; };
-		64A1978D1E07ACC000095CAA /* EBNativeBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1976D1E07ACC000095CAA /* EBNativeBannerAdViewController.m */; };
-		64A1978E1E07ACC000095CAA /* EBAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197701E07ACC000095CAA /* EBAdInfo.m */; };
-		64A1978F1E07ACC000095CAA /* EBAdSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197721E07ACC000095CAA /* EBAdSection.m */; };
-		64A197901E07ACC000095CAA /* EBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197741E07ACC000095CAA /* EBConfig.m */; };
-		64A197911E07ACC000095CAA /* EBCollectionViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197771E07ACC000095CAA /* EBCollectionViewAdPlacerView.m */; };
-		64A197921E07ACC000095CAA /* EBHTMLDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197791E07ACC000095CAA /* EBHTMLDialogView.m */; };
-		64A197931E07ACC000095CAA /* EBNativeAd2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1977B1E07ACC000095CAA /* EBNativeAd2View.m */; };
-		64A197941E07ACC000095CAA /* EBNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1977D1E07ACC000095CAA /* EBNativeAdView.m */; };
-		64A197951E07ACC000095CAA /* EBNativeBannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A1977F1E07ACC000095CAA /* EBNativeBannerAdView.m */; };
-		64A197961E07ACC000095CAA /* EBNativeDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197811E07ACC000095CAA /* EBNativeDialogView.m */; };
-		64A197971E07ACC000095CAA /* EBNativeRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197831E07ACC000095CAA /* EBNativeRoundView.m */; };
-		64A197981E07ACC000095CAA /* EBTableViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A197851E07ACC000095CAA /* EBTableViewAdPlacerView.m */; };
-		BFE85C6FCBF4829B149A78D5 /* libPods-ExelBidSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C21688F282DC8195BD608A5 /* libPods-ExelBidSample.a */; };
+		1D29554E299B4E1E00D39514 /* EBAdFitNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29554D299B4E1E00D39514 /* EBAdFitNativeAdView.m */; };
+		1D295552299B4FCD00D39514 /* EBMediationBizBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D295551299B4FCD00D39514 /* EBMediationBizBoardViewController.m */; };
+		1D8287442994DFD200F22178 /* EBMediationBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8287432994DFD200F22178 /* EBMediationBannerAdViewController.m */; };
+		1D93FC37299A0BFB00E4F103 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D93FC32299A004800E4F103 /* AppTrackingTransparency.framework */; };
+		1D93FC3E299A296A00E4F103 /* Pods_ExelbidSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CC621707BB53BF26CF57F1 /* Pods_ExelbidSample.framework */; };
+		1DBADE66299B29120054FD2A /* EBMediationNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBADE65299B29120054FD2A /* EBMediationNativeAdViewController.m */; };
+		6412693A1DBDA31500A7F514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 641269391DBDA31500A7F514 /* main.m */; };
+		6412693D1DBDA31500A7F514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412693C1DBDA31500A7F514 /* AppDelegate.m */; };
+		641269431DBDA31500A7F514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641269411DBDA31500A7F514 /* Main.storyboard */; };
+		641269451DBDA31500A7F514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641269441DBDA31500A7F514 /* Assets.xcassets */; };
+		641269481DBDA31500A7F514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641269461DBDA31500A7F514 /* LaunchScreen.storyboard */; };
+		641269541DBDA3F300A7F514 /* EBAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641269531DBDA3F300A7F514 /* EBAdTableViewController.m */; };
+		641269571DBDA59C00A7F514 /* EBAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 641269561DBDA59C00A7F514 /* EBAdInfo.m */; };
+		6412695A1DBDA6DE00A7F514 /* EBAdSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 641269591DBDA6DE00A7F514 /* EBAdSection.m */; };
+		6412695D1DBDAD2B00A7F514 /* EBBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412695C1DBDAD2B00A7F514 /* EBBannerAdViewController.m */; };
+		644762DE1DD9956600C08F2B /* EBNativeAdCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644762DD1DD9956600C08F2B /* EBNativeAdCollectionViewController.m */; };
+		644762E11DD995F300C08F2B /* EBCollectionViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 644762E01DD995F300C08F2B /* EBCollectionViewAdPlacerView.m */; };
+		6486DD231DDC084D0060B23B /* EBNativeDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6486DD221DDC084D0060B23B /* EBNativeDialogView.m */; };
+		6486DD261DDC0DF40060B23B /* EBNativeAd2View.m in Sources */ = {isa = PBXBuildFile; fileRef = 6486DD251DDC0DF40060B23B /* EBNativeAd2View.m */; };
+		6486DD2B1DDC107D0060B23B /* EBNativeRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6486DD2A1DDC107D0060B23B /* EBNativeRoundView.m */; };
+		648966491DD1690A003CBA29 /* EBNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648966481DD1690A003CBA29 /* EBNativeAdViewController.m */; };
+		648966991DD18FB1003CBA29 /* EBNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 648966981DD18FB1003CBA29 /* EBNativeAdView.m */; };
+		6492D9E41DD42635004E751D /* EBNativeBannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6492D9E31DD42635004E751D /* EBNativeBannerAdView.m */; };
+		6492D9E71DD427A0004E751D /* EBNativeBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6492D9E61DD427A0004E751D /* EBNativeBannerAdViewController.m */; };
+		6497E8641DD5738500A2BBFF /* EBNativeAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497E8631DD5738500A2BBFF /* EBNativeAdTableViewController.m */; };
+		6497E8671DD5763B00A2BBFF /* EBTableViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497E8661DD5763B00A2BBFF /* EBTableViewAdPlacerView.m */; };
+		64BFE6961DDB0F000030BCA0 /* EBHTMLDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BFE6951DDB0F000030BCA0 /* EBHTMLDialogView.m */; };
+		64BFE6991DDB12C10030BCA0 /* EBDialogAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BFE6981DDB12C10030BCA0 /* EBDialogAdViewController.m */; };
+		64DF9BAE1DCC4C0000836561 /* EBFrontBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DF9BAD1DCC4C0000836561 /* EBFrontBannerAdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C014DB22832791806920775 /* Pods-ExelBidSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExelBidSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExelBidSample/Pods-ExelBidSample.debug.xcconfig"; sourceTree = "<group>"; };
-		4C21688F282DC8195BD608A5 /* libPods-ExelBidSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExelBidSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64A197091E07A7E100095CAA /* ExelBidSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExelBidSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		64A1970D1E07A7E100095CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		64A1970F1E07A7E100095CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		64A197101E07A7E100095CAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		64A197161E07A7E100095CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		64A197181E07A7E100095CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		64A1971B1E07A7E100095CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		64A1971D1E07A7E100095CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64A1975E1E07ACC000095CAA /* EBAdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAdTableViewController.h; sourceTree = "<group>"; };
-		64A1975F1E07ACC000095CAA /* EBAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAdTableViewController.m; sourceTree = "<group>"; };
-		64A197601E07ACC000095CAA /* EBBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBBannerAdViewController.h; sourceTree = "<group>"; };
-		64A197611E07ACC000095CAA /* EBBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBBannerAdViewController.m; sourceTree = "<group>"; };
-		64A197621E07ACC000095CAA /* EBDialogAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBDialogAdViewController.h; sourceTree = "<group>"; };
-		64A197631E07ACC000095CAA /* EBDialogAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBDialogAdViewController.m; sourceTree = "<group>"; };
-		64A197641E07ACC000095CAA /* EBFrontBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFrontBannerAdViewController.h; sourceTree = "<group>"; };
-		64A197651E07ACC000095CAA /* EBFrontBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBFrontBannerAdViewController.m; sourceTree = "<group>"; };
-		64A197661E07ACC000095CAA /* EBNativeAdCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdCollectionViewController.h; sourceTree = "<group>"; };
-		64A197671E07ACC000095CAA /* EBNativeAdCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdCollectionViewController.m; sourceTree = "<group>"; };
-		64A197681E07ACC000095CAA /* EBNativeAdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdTableViewController.h; sourceTree = "<group>"; };
-		64A197691E07ACC000095CAA /* EBNativeAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdTableViewController.m; sourceTree = "<group>"; };
-		64A1976A1E07ACC000095CAA /* EBNativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdViewController.h; sourceTree = "<group>"; };
-		64A1976B1E07ACC000095CAA /* EBNativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdViewController.m; sourceTree = "<group>"; };
-		64A1976C1E07ACC000095CAA /* EBNativeBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeBannerAdViewController.h; sourceTree = "<group>"; };
-		64A1976D1E07ACC000095CAA /* EBNativeBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeBannerAdViewController.m; sourceTree = "<group>"; };
-		64A1976F1E07ACC000095CAA /* EBAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAdInfo.h; sourceTree = "<group>"; };
-		64A197701E07ACC000095CAA /* EBAdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAdInfo.m; sourceTree = "<group>"; };
-		64A197711E07ACC000095CAA /* EBAdSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAdSection.h; sourceTree = "<group>"; };
-		64A197721E07ACC000095CAA /* EBAdSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAdSection.m; sourceTree = "<group>"; };
-		64A197731E07ACC000095CAA /* EBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBConfig.h; sourceTree = "<group>"; };
-		64A197741E07ACC000095CAA /* EBConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBConfig.m; sourceTree = "<group>"; };
-		64A197761E07ACC000095CAA /* EBCollectionViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCollectionViewAdPlacerView.h; sourceTree = "<group>"; };
-		64A197771E07ACC000095CAA /* EBCollectionViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCollectionViewAdPlacerView.m; sourceTree = "<group>"; };
-		64A197781E07ACC000095CAA /* EBHTMLDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBHTMLDialogView.h; sourceTree = "<group>"; };
-		64A197791E07ACC000095CAA /* EBHTMLDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBHTMLDialogView.m; sourceTree = "<group>"; };
-		64A1977A1E07ACC000095CAA /* EBNativeAd2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAd2View.h; sourceTree = "<group>"; };
-		64A1977B1E07ACC000095CAA /* EBNativeAd2View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAd2View.m; sourceTree = "<group>"; };
-		64A1977C1E07ACC000095CAA /* EBNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdView.h; sourceTree = "<group>"; };
-		64A1977D1E07ACC000095CAA /* EBNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdView.m; sourceTree = "<group>"; };
-		64A1977E1E07ACC000095CAA /* EBNativeBannerAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeBannerAdView.h; sourceTree = "<group>"; };
-		64A1977F1E07ACC000095CAA /* EBNativeBannerAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeBannerAdView.m; sourceTree = "<group>"; };
-		64A197801E07ACC000095CAA /* EBNativeDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeDialogView.h; sourceTree = "<group>"; };
-		64A197811E07ACC000095CAA /* EBNativeDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeDialogView.m; sourceTree = "<group>"; };
-		64A197821E07ACC000095CAA /* EBNativeRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeRoundView.h; sourceTree = "<group>"; };
-		64A197831E07ACC000095CAA /* EBNativeRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeRoundView.m; sourceTree = "<group>"; };
-		64A197841E07ACC000095CAA /* EBTableViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTableViewAdPlacerView.h; sourceTree = "<group>"; };
-		64A197851E07ACC000095CAA /* EBTableViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTableViewAdPlacerView.m; sourceTree = "<group>"; };
-		7A69E7974BF5F9CE51622D6A /* Pods-ExelBidSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExelBidSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExelBidSample/Pods-ExelBidSample.release.xcconfig"; sourceTree = "<group>"; };
+		08CC621707BB53BF26CF57F1 /* Pods_ExelbidSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExelbidSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D29554D299B4E1E00D39514 /* EBAdFitNativeAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBAdFitNativeAdView.m; sourceTree = "<group>"; };
+		1D29554F299B4E2400D39514 /* EBAdFitNativeAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBAdFitNativeAdView.h; sourceTree = "<group>"; };
+		1D295550299B4FCD00D39514 /* EBMediationBizBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMediationBizBoardViewController.h; sourceTree = "<group>"; };
+		1D295551299B4FCD00D39514 /* EBMediationBizBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBMediationBizBoardViewController.m; sourceTree = "<group>"; };
+		1D8287432994DFD200F22178 /* EBMediationBannerAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBMediationBannerAdViewController.m; sourceTree = "<group>"; };
+		1D8287452994DFE200F22178 /* EBMediationBannerAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMediationBannerAdViewController.h; sourceTree = "<group>"; };
+		1D93FC32299A004800E4F103 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		1D945FB1299C9FB300B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
+		1D945FB4299CC98100B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
+		1D945FB8299CCB8C00B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
+		1D945FBC299CCCC400B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
+		1D945FC0299CCDDE00B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExelBidSDK.xcframework; path = "../ExelBid-iOS-SDK/ExelBidSDK.xcframework"; sourceTree = "<group>"; };
+		1DBADE64299B29120054FD2A /* EBMediationNativeAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMediationNativeAdViewController.h; sourceTree = "<group>"; };
+		1DBADE65299B29120054FD2A /* EBMediationNativeAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBMediationNativeAdViewController.m; sourceTree = "<group>"; };
+		641269351DBDA31500A7F514 /* ExelbidSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExelbidSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		641269391DBDA31500A7F514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6412693B1DBDA31500A7F514 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6412693C1DBDA31500A7F514 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		641269421DBDA31500A7F514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		641269441DBDA31500A7F514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		641269471DBDA31500A7F514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		641269491DBDA31500A7F514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		641269521DBDA3F300A7F514 /* EBAdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAdTableViewController.h; sourceTree = "<group>"; };
+		641269531DBDA3F300A7F514 /* EBAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAdTableViewController.m; sourceTree = "<group>"; };
+		641269551DBDA59C00A7F514 /* EBAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAdInfo.h; sourceTree = "<group>"; };
+		641269561DBDA59C00A7F514 /* EBAdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAdInfo.m; sourceTree = "<group>"; };
+		641269581DBDA6DE00A7F514 /* EBAdSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAdSection.h; sourceTree = "<group>"; };
+		641269591DBDA6DE00A7F514 /* EBAdSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAdSection.m; sourceTree = "<group>"; };
+		6412695B1DBDAD2B00A7F514 /* EBBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBBannerAdViewController.h; sourceTree = "<group>"; };
+		6412695C1DBDAD2B00A7F514 /* EBBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBBannerAdViewController.m; sourceTree = "<group>"; };
+		644762DC1DD9956600C08F2B /* EBNativeAdCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdCollectionViewController.h; sourceTree = "<group>"; };
+		644762DD1DD9956600C08F2B /* EBNativeAdCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdCollectionViewController.m; sourceTree = "<group>"; };
+		644762DF1DD995F300C08F2B /* EBCollectionViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCollectionViewAdPlacerView.h; sourceTree = "<group>"; };
+		644762E01DD995F300C08F2B /* EBCollectionViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCollectionViewAdPlacerView.m; sourceTree = "<group>"; };
+		6486DD211DDC084D0060B23B /* EBNativeDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeDialogView.h; sourceTree = "<group>"; };
+		6486DD221DDC084D0060B23B /* EBNativeDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeDialogView.m; sourceTree = "<group>"; };
+		6486DD241DDC0DF40060B23B /* EBNativeAd2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAd2View.h; sourceTree = "<group>"; };
+		6486DD251DDC0DF40060B23B /* EBNativeAd2View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAd2View.m; sourceTree = "<group>"; };
+		6486DD291DDC107D0060B23B /* EBNativeRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeRoundView.h; sourceTree = "<group>"; };
+		6486DD2A1DDC107D0060B23B /* EBNativeRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeRoundView.m; sourceTree = "<group>"; };
+		648966471DD1690A003CBA29 /* EBNativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdViewController.h; sourceTree = "<group>"; };
+		648966481DD1690A003CBA29 /* EBNativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdViewController.m; sourceTree = "<group>"; };
+		648966971DD18FB1003CBA29 /* EBNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdView.h; sourceTree = "<group>"; };
+		648966981DD18FB1003CBA29 /* EBNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdView.m; sourceTree = "<group>"; };
+		6492D9E21DD42635004E751D /* EBNativeBannerAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeBannerAdView.h; sourceTree = "<group>"; };
+		6492D9E31DD42635004E751D /* EBNativeBannerAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeBannerAdView.m; sourceTree = "<group>"; };
+		6492D9E51DD427A0004E751D /* EBNativeBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeBannerAdViewController.h; sourceTree = "<group>"; };
+		6492D9E61DD427A0004E751D /* EBNativeBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeBannerAdViewController.m; sourceTree = "<group>"; };
+		6497E8621DD5738500A2BBFF /* EBNativeAdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNativeAdTableViewController.h; sourceTree = "<group>"; };
+		6497E8631DD5738500A2BBFF /* EBNativeAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNativeAdTableViewController.m; sourceTree = "<group>"; };
+		6497E8651DD5763B00A2BBFF /* EBTableViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTableViewAdPlacerView.h; sourceTree = "<group>"; };
+		6497E8661DD5763B00A2BBFF /* EBTableViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTableViewAdPlacerView.m; sourceTree = "<group>"; };
+		64BFE6941DDB0F000030BCA0 /* EBHTMLDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBHTMLDialogView.h; sourceTree = "<group>"; };
+		64BFE6951DDB0F000030BCA0 /* EBHTMLDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBHTMLDialogView.m; sourceTree = "<group>"; };
+		64BFE6971DDB12C10030BCA0 /* EBDialogAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBDialogAdViewController.h; sourceTree = "<group>"; };
+		64BFE6981DDB12C10030BCA0 /* EBDialogAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBDialogAdViewController.m; sourceTree = "<group>"; };
+		64DF9BAC1DCC4C0000836561 /* EBFrontBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFrontBannerAdViewController.h; sourceTree = "<group>"; };
+		64DF9BAD1DCC4C0000836561 /* EBFrontBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBFrontBannerAdViewController.m; sourceTree = "<group>"; };
+		B651AE69B6D1B2147797B0C7 /* Pods-ExelbidSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExelbidSample.debug.xcconfig"; path = "Target Support Files/Pods-ExelbidSample/Pods-ExelbidSample.debug.xcconfig"; sourceTree = "<group>"; };
+		E517D22C82DD38514CFE8C5E /* Pods-ExelbidSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExelbidSample.release.xcconfig"; path = "Target Support Files/Pods-ExelbidSample/Pods-ExelbidSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		64A197061E07A7E100095CAA /* Frameworks */ = {
+		641269321DBDA31500A7F514 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE85C6FCBF4829B149A78D5 /* libPods-ExelBidSample.a in Frameworks */,
+				1D93FC3E299A296A00E4F103 /* Pods_ExelbidSample.framework in Frameworks */,
+				1D93FC37299A0BFB00E4F103 /* AppTrackingTransparency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		542B7307239EF797061700B2 /* Pods */ = {
+		1D93FC31299A004800E4F103 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C014DB22832791806920775 /* Pods-ExelBidSample.debug.xcconfig */,
-				7A69E7974BF5F9CE51622D6A /* Pods-ExelBidSample.release.xcconfig */,
+				1D945FB1299C9FB300B05517 /* ExelBidSDK.xcframework */,
+				1D945FB4299CC98100B05517 /* ExelBidSDK.xcframework */,
+				1D945FB8299CCB8C00B05517 /* ExelBidSDK.xcframework */,
+				1D945FBC299CCCC400B05517 /* ExelBidSDK.xcframework */,
+				1D945FC0299CCDDE00B05517 /* ExelBidSDK.xcframework */,
+				1D93FC32299A004800E4F103 /* AppTrackingTransparency.framework */,
+				08CC621707BB53BF26CF57F1 /* Pods_ExelbidSample.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		64A197001E07A7E100095CAA = {
+		1DBADE67299B293B0054FD2A /* mediation */ = {
 			isa = PBXGroup;
 			children = (
-				64A1970B1E07A7E100095CAA /* ExelBidSample */,
-				64A1970A1E07A7E100095CAA /* Products */,
-				542B7307239EF797061700B2 /* Pods */,
-				9DD24A0AB673B413327AD0A6 /* Frameworks */,
+				1D8287452994DFE200F22178 /* EBMediationBannerAdViewController.h */,
+				1D8287432994DFD200F22178 /* EBMediationBannerAdViewController.m */,
+				1DBADE64299B29120054FD2A /* EBMediationNativeAdViewController.h */,
+				1DBADE65299B29120054FD2A /* EBMediationNativeAdViewController.m */,
+				1D295550299B4FCD00D39514 /* EBMediationBizBoardViewController.h */,
+				1D295551299B4FCD00D39514 /* EBMediationBizBoardViewController.m */,
+			);
+			path = mediation;
+			sourceTree = "<group>";
+		};
+		6412692C1DBDA31500A7F514 = {
+			isa = PBXGroup;
+			children = (
+				641269371DBDA31500A7F514 /* ExelbidSample */,
+				641269361DBDA31500A7F514 /* Products */,
+				1D93FC31299A004800E4F103 /* Frameworks */,
+				743D8701B546D04BEA0B7E5F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		64A1970A1E07A7E100095CAA /* Products */ = {
+		641269361DBDA31500A7F514 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64A197091E07A7E100095CAA /* ExelBidSample.app */,
+				641269351DBDA31500A7F514 /* ExelbidSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		64A1970B1E07A7E100095CAA /* ExelBidSample */ = {
+		641269371DBDA31500A7F514 /* ExelbidSample */ = {
 			isa = PBXGroup;
 			children = (
-				64A1975D1E07ACC000095CAA /* Contollers */,
-				64A1976E1E07ACC000095CAA /* Domain */,
-				64A197751E07ACC000095CAA /* Views */,
-				64A1970F1E07A7E100095CAA /* AppDelegate.h */,
-				64A197101E07A7E100095CAA /* AppDelegate.m */,
-				64A197151E07A7E100095CAA /* Main.storyboard */,
-				64A197181E07A7E100095CAA /* Assets.xcassets */,
-				64A1971A1E07A7E100095CAA /* LaunchScreen.storyboard */,
-				64A1971D1E07A7E100095CAA /* Info.plist */,
-				64A1970C1E07A7E100095CAA /* Supporting Files */,
+				641269501DBDA39E00A7F514 /* Domain */,
+				6412694F1DBDA39E00A7F514 /* Contollers */,
+				641269511DBDA39E00A7F514 /* Views */,
+				6412693B1DBDA31500A7F514 /* AppDelegate.h */,
+				6412693C1DBDA31500A7F514 /* AppDelegate.m */,
+				641269411DBDA31500A7F514 /* Main.storyboard */,
+				641269441DBDA31500A7F514 /* Assets.xcassets */,
+				641269461DBDA31500A7F514 /* LaunchScreen.storyboard */,
+				641269491DBDA31500A7F514 /* Info.plist */,
+				641269381DBDA31500A7F514 /* Supporting Files */,
 			);
-			path = ExelBidSample;
+			path = ExelbidSample;
 			sourceTree = "<group>";
 		};
-		64A1970C1E07A7E100095CAA /* Supporting Files */ = {
+		641269381DBDA31500A7F514 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				64A1970D1E07A7E100095CAA /* main.m */,
+				641269391DBDA31500A7F514 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		64A1975D1E07ACC000095CAA /* Contollers */ = {
+		6412694F1DBDA39E00A7F514 /* Contollers */ = {
 			isa = PBXGroup;
 			children = (
-				64A1975E1E07ACC000095CAA /* EBAdTableViewController.h */,
-				64A1975F1E07ACC000095CAA /* EBAdTableViewController.m */,
-				64A197601E07ACC000095CAA /* EBBannerAdViewController.h */,
-				64A197611E07ACC000095CAA /* EBBannerAdViewController.m */,
-				64A197641E07ACC000095CAA /* EBFrontBannerAdViewController.h */,
-				64A197651E07ACC000095CAA /* EBFrontBannerAdViewController.m */,
-				64A197621E07ACC000095CAA /* EBDialogAdViewController.h */,
-				64A197631E07ACC000095CAA /* EBDialogAdViewController.m */,
-				64A1976A1E07ACC000095CAA /* EBNativeAdViewController.h */,
-				64A1976B1E07ACC000095CAA /* EBNativeAdViewController.m */,
-				64A1976C1E07ACC000095CAA /* EBNativeBannerAdViewController.h */,
-				64A1976D1E07ACC000095CAA /* EBNativeBannerAdViewController.m */,
-				64A197661E07ACC000095CAA /* EBNativeAdCollectionViewController.h */,
-				64A197671E07ACC000095CAA /* EBNativeAdCollectionViewController.m */,
-				64A197681E07ACC000095CAA /* EBNativeAdTableViewController.h */,
-				64A197691E07ACC000095CAA /* EBNativeAdTableViewController.m */,
+				1DBADE67299B293B0054FD2A /* mediation */,
+				641269521DBDA3F300A7F514 /* EBAdTableViewController.h */,
+				641269531DBDA3F300A7F514 /* EBAdTableViewController.m */,
+				6412695B1DBDAD2B00A7F514 /* EBBannerAdViewController.h */,
+				6412695C1DBDAD2B00A7F514 /* EBBannerAdViewController.m */,
+				64DF9BAC1DCC4C0000836561 /* EBFrontBannerAdViewController.h */,
+				64DF9BAD1DCC4C0000836561 /* EBFrontBannerAdViewController.m */,
+				648966471DD1690A003CBA29 /* EBNativeAdViewController.h */,
+				648966481DD1690A003CBA29 /* EBNativeAdViewController.m */,
+				6492D9E51DD427A0004E751D /* EBNativeBannerAdViewController.h */,
+				6492D9E61DD427A0004E751D /* EBNativeBannerAdViewController.m */,
+				6497E8621DD5738500A2BBFF /* EBNativeAdTableViewController.h */,
+				6497E8631DD5738500A2BBFF /* EBNativeAdTableViewController.m */,
+				644762DC1DD9956600C08F2B /* EBNativeAdCollectionViewController.h */,
+				644762DD1DD9956600C08F2B /* EBNativeAdCollectionViewController.m */,
+				64BFE6971DDB12C10030BCA0 /* EBDialogAdViewController.h */,
+				64BFE6981DDB12C10030BCA0 /* EBDialogAdViewController.m */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
 		};
-		64A1976E1E07ACC000095CAA /* Domain */ = {
+		641269501DBDA39E00A7F514 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				64A1976F1E07ACC000095CAA /* EBAdInfo.h */,
-				64A197701E07ACC000095CAA /* EBAdInfo.m */,
-				64A197711E07ACC000095CAA /* EBAdSection.h */,
-				64A197721E07ACC000095CAA /* EBAdSection.m */,
-				64A197731E07ACC000095CAA /* EBConfig.h */,
-				64A197741E07ACC000095CAA /* EBConfig.m */,
+				641269551DBDA59C00A7F514 /* EBAdInfo.h */,
+				641269561DBDA59C00A7F514 /* EBAdInfo.m */,
+				641269581DBDA6DE00A7F514 /* EBAdSection.h */,
+				641269591DBDA6DE00A7F514 /* EBAdSection.m */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		64A197751E07ACC000095CAA /* Views */ = {
+		641269511DBDA39E00A7F514 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				64A197761E07ACC000095CAA /* EBCollectionViewAdPlacerView.h */,
-				64A197771E07ACC000095CAA /* EBCollectionViewAdPlacerView.m */,
-				64A197781E07ACC000095CAA /* EBHTMLDialogView.h */,
-				64A197791E07ACC000095CAA /* EBHTMLDialogView.m */,
-				64A1977A1E07ACC000095CAA /* EBNativeAd2View.h */,
-				64A1977B1E07ACC000095CAA /* EBNativeAd2View.m */,
-				64A1977C1E07ACC000095CAA /* EBNativeAdView.h */,
-				64A1977D1E07ACC000095CAA /* EBNativeAdView.m */,
-				64A1977E1E07ACC000095CAA /* EBNativeBannerAdView.h */,
-				64A1977F1E07ACC000095CAA /* EBNativeBannerAdView.m */,
-				64A197801E07ACC000095CAA /* EBNativeDialogView.h */,
-				64A197811E07ACC000095CAA /* EBNativeDialogView.m */,
-				64A197821E07ACC000095CAA /* EBNativeRoundView.h */,
-				64A197831E07ACC000095CAA /* EBNativeRoundView.m */,
-				64A197841E07ACC000095CAA /* EBTableViewAdPlacerView.h */,
-				64A197851E07ACC000095CAA /* EBTableViewAdPlacerView.m */,
+				648966971DD18FB1003CBA29 /* EBNativeAdView.h */,
+				648966981DD18FB1003CBA29 /* EBNativeAdView.m */,
+				6486DD241DDC0DF40060B23B /* EBNativeAd2View.h */,
+				6486DD251DDC0DF40060B23B /* EBNativeAd2View.m */,
+				6492D9E21DD42635004E751D /* EBNativeBannerAdView.h */,
+				6492D9E31DD42635004E751D /* EBNativeBannerAdView.m */,
+				6497E8651DD5763B00A2BBFF /* EBTableViewAdPlacerView.h */,
+				6497E8661DD5763B00A2BBFF /* EBTableViewAdPlacerView.m */,
+				644762DF1DD995F300C08F2B /* EBCollectionViewAdPlacerView.h */,
+				644762E01DD995F300C08F2B /* EBCollectionViewAdPlacerView.m */,
+				64BFE6941DDB0F000030BCA0 /* EBHTMLDialogView.h */,
+				64BFE6951DDB0F000030BCA0 /* EBHTMLDialogView.m */,
+				6486DD211DDC084D0060B23B /* EBNativeDialogView.h */,
+				6486DD221DDC084D0060B23B /* EBNativeDialogView.m */,
+				6486DD291DDC107D0060B23B /* EBNativeRoundView.h */,
+				6486DD2A1DDC107D0060B23B /* EBNativeRoundView.m */,
+				1D29554F299B4E2400D39514 /* EBAdFitNativeAdView.h */,
+				1D29554D299B4E1E00D39514 /* EBAdFitNativeAdView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9DD24A0AB673B413327AD0A6 /* Frameworks */ = {
+		743D8701B546D04BEA0B7E5F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4C21688F282DC8195BD608A5 /* libPods-ExelBidSample.a */,
+				B651AE69B6D1B2147797B0C7 /* Pods-ExelbidSample.debug.xcconfig */,
+				E517D22C82DD38514CFE8C5E /* Pods-ExelbidSample.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		64A197081E07A7E100095CAA /* ExelBidSample */ = {
+		641269341DBDA31500A7F514 /* ExelbidSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64A197201E07A7E100095CAA /* Build configuration list for PBXNativeTarget "ExelBidSample" */;
+			buildConfigurationList = 6412694C1DBDA31500A7F514 /* Build configuration list for PBXNativeTarget "ExelbidSample" */;
 			buildPhases = (
-				30FC39384007436CDBABC0AA /* [CP] Check Pods Manifest.lock */,
-				64A197051E07A7E100095CAA /* Sources */,
-				64A197061E07A7E100095CAA /* Frameworks */,
-				64A197071E07A7E100095CAA /* Resources */,
-				75A255674461A0ADD4014942 /* [CP] Embed Pods Frameworks */,
-				98D57A12132FEC5A1A51977B /* [CP] Copy Pods Resources */,
+				B7863FD50E7F799D7463F80A /* [CP] Check Pods Manifest.lock */,
+				641269311DBDA31500A7F514 /* Sources */,
+				641269321DBDA31500A7F514 /* Frameworks */,
+				641269331DBDA31500A7F514 /* Resources */,
+				49585CB53690479124D7C3A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ExelBidSample;
-			productName = ExelBidSample;
-			productReference = 64A197091E07A7E100095CAA /* ExelBidSample.app */;
+			name = ExelbidSample;
+			productName = ExelbidSample;
+			productReference = 641269351DBDA31500A7F514 /* ExelbidSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		64A197011E07A7E100095CAA /* Project object */ = {
+		6412692D1DBDA31500A7F514 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = exelbid;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Zionbi;
 				TargetAttributes = {
-					64A197081E07A7E100095CAA = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CRQ85XPKH9;
-						ProvisioningStyle = Automatic;
+					641269341DBDA31500A7F514 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 64A197041E07A7E100095CAA /* Build configuration list for PBXProject "ExelBidSample" */;
+			buildConfigurationList = 641269301DBDA31500A7F514 /* Build configuration list for PBXProject "ExelbidSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
-			mainGroup = 64A197001E07A7E100095CAA;
-			productRefGroup = 64A1970A1E07A7E100095CAA /* Products */;
+			mainGroup = 6412692C1DBDA31500A7F514;
+			productRefGroup = 641269361DBDA31500A7F514 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64A197081E07A7E100095CAA /* ExelBidSample */,
+				641269341DBDA31500A7F514 /* ExelbidSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		64A197071E07A7E100095CAA /* Resources */ = {
+		641269331DBDA31500A7F514 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A1971C1E07A7E100095CAA /* LaunchScreen.storyboard in Resources */,
-				64A197191E07A7E100095CAA /* Assets.xcassets in Resources */,
-				64A197171E07A7E100095CAA /* Main.storyboard in Resources */,
+				641269481DBDA31500A7F514 /* LaunchScreen.storyboard in Resources */,
+				641269451DBDA31500A7F514 /* Assets.xcassets in Resources */,
+				641269431DBDA31500A7F514 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30FC39384007436CDBABC0AA /* [CP] Check Pods Manifest.lock */ = {
+		49585CB53690479124D7C3A3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		75A255674461A0ADD4014942 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExelbidSample/Pods-ExelbidSample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AdFitSDK/AdFitSDK.framework/AdFitSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ExelBid_iOS/ExelBidSDK.framework/ExelBidSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdFitSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExelBidSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExelBidSample/Pods-ExelBidSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExelbidSample/Pods-ExelbidSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98D57A12132FEC5A1A51977B /* [CP] Copy Pods Resources */ = {
+		B7863FD50E7F799D7463F80A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExelbidSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExelBidSample/Pods-ExelBidSample-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		64A197051E07A7E100095CAA /* Sources */ = {
+		641269311DBDA31500A7F514 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A197861E07ACC000095CAA /* EBAdTableViewController.m in Sources */,
-				64A197941E07ACC000095CAA /* EBNativeAdView.m in Sources */,
-				64A197881E07ACC000095CAA /* EBDialogAdViewController.m in Sources */,
-				64A197891E07ACC000095CAA /* EBFrontBannerAdViewController.m in Sources */,
-				64A197921E07ACC000095CAA /* EBHTMLDialogView.m in Sources */,
-				64A1978A1E07ACC000095CAA /* EBNativeAdCollectionViewController.m in Sources */,
-				64A197911E07ACC000095CAA /* EBCollectionViewAdPlacerView.m in Sources */,
-				64A197951E07ACC000095CAA /* EBNativeBannerAdView.m in Sources */,
-				64A1978C1E07ACC000095CAA /* EBNativeAdViewController.m in Sources */,
-				64A1978B1E07ACC000095CAA /* EBNativeAdTableViewController.m in Sources */,
-				64A1978E1E07ACC000095CAA /* EBAdInfo.m in Sources */,
-				64A197961E07ACC000095CAA /* EBNativeDialogView.m in Sources */,
-				64A1978D1E07ACC000095CAA /* EBNativeBannerAdViewController.m in Sources */,
-				64A197111E07A7E100095CAA /* AppDelegate.m in Sources */,
-				64A1978F1E07ACC000095CAA /* EBAdSection.m in Sources */,
-				64A197981E07ACC000095CAA /* EBTableViewAdPlacerView.m in Sources */,
-				64A197971E07ACC000095CAA /* EBNativeRoundView.m in Sources */,
-				64A197931E07ACC000095CAA /* EBNativeAd2View.m in Sources */,
-				64A197901E07ACC000095CAA /* EBConfig.m in Sources */,
-				64A197871E07ACC000095CAA /* EBBannerAdViewController.m in Sources */,
-				64A1970E1E07A7E100095CAA /* main.m in Sources */,
+				1DBADE66299B29120054FD2A /* EBMediationNativeAdViewController.m in Sources */,
+				641269541DBDA3F300A7F514 /* EBAdTableViewController.m in Sources */,
+				648966991DD18FB1003CBA29 /* EBNativeAdView.m in Sources */,
+				1D8287442994DFD200F22178 /* EBMediationBannerAdViewController.m in Sources */,
+				648966491DD1690A003CBA29 /* EBNativeAdViewController.m in Sources */,
+				641269571DBDA59C00A7F514 /* EBAdInfo.m in Sources */,
+				6497E8641DD5738500A2BBFF /* EBNativeAdTableViewController.m in Sources */,
+				1D295552299B4FCD00D39514 /* EBMediationBizBoardViewController.m in Sources */,
+				6492D9E71DD427A0004E751D /* EBNativeBannerAdViewController.m in Sources */,
+				6497E8671DD5763B00A2BBFF /* EBTableViewAdPlacerView.m in Sources */,
+				1D29554E299B4E1E00D39514 /* EBAdFitNativeAdView.m in Sources */,
+				6486DD261DDC0DF40060B23B /* EBNativeAd2View.m in Sources */,
+				64BFE6961DDB0F000030BCA0 /* EBHTMLDialogView.m in Sources */,
+				6412693D1DBDA31500A7F514 /* AppDelegate.m in Sources */,
+				6486DD231DDC084D0060B23B /* EBNativeDialogView.m in Sources */,
+				644762E11DD995F300C08F2B /* EBCollectionViewAdPlacerView.m in Sources */,
+				6412695A1DBDA6DE00A7F514 /* EBAdSection.m in Sources */,
+				64DF9BAE1DCC4C0000836561 /* EBFrontBannerAdViewController.m in Sources */,
+				6412695D1DBDAD2B00A7F514 /* EBBannerAdViewController.m in Sources */,
+				6486DD2B1DDC107D0060B23B /* EBNativeRoundView.m in Sources */,
+				6492D9E41DD42635004E751D /* EBNativeBannerAdView.m in Sources */,
+				64BFE6991DDB12C10030BCA0 /* EBDialogAdViewController.m in Sources */,
+				644762DE1DD9956600C08F2B /* EBNativeAdCollectionViewController.m in Sources */,
+				6412693A1DBDA31500A7F514 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		64A197151E07A7E100095CAA /* Main.storyboard */ = {
+		641269411DBDA31500A7F514 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				64A197161E07A7E100095CAA /* Base */,
+				641269421DBDA31500A7F514 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		64A1971A1E07A7E100095CAA /* LaunchScreen.storyboard */ = {
+		641269461DBDA31500A7F514 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				64A1971B1E07A7E100095CAA /* Base */,
+				641269471DBDA31500A7F514 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -386,11 +421,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		64A1971E1E07A7E100095CAA /* Debug */ = {
+		6412694A1DBDA31500A7F514 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -398,13 +433,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -426,7 +458,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -434,11 +465,11 @@
 			};
 			name = Debug;
 		};
-		64A1971F1E07A7E100095CAA /* Release */ = {
+		6412694B1DBDA31500A7F514 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -446,13 +477,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -468,7 +496,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,32 +503,44 @@
 			};
 			name = Release;
 		};
-		64A197211E07A7E100095CAA /* Debug */ = {
+		6412694D1DBDA31500A7F514 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C014DB22832791806920775 /* Pods-ExelBidSample.debug.xcconfig */;
+			baseConfigurationReference = B651AE69B6D1B2147797B0C7 /* Pods-ExelbidSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CRQ85XPKH9;
-				INFOPLIST_FILE = ExelBidSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ExelbidSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.exelbid.ExelBidSample;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zionbi.ExelbidSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		64A197221E07A7E100095CAA /* Release */ = {
+		6412694E1DBDA31500A7F514 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A69E7974BF5F9CE51622D6A /* Pods-ExelBidSample.release.xcconfig */;
+			baseConfigurationReference = E517D22C82DD38514CFE8C5E /* Pods-ExelbidSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CRQ85XPKH9;
-				INFOPLIST_FILE = ExelBidSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ExelbidSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.exelbid.ExelBidSample;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zionbi.ExelbidSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -509,25 +548,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64A197041E07A7E100095CAA /* Build configuration list for PBXProject "ExelBidSample" */ = {
+		641269301DBDA31500A7F514 /* Build configuration list for PBXProject "ExelbidSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64A1971E1E07A7E100095CAA /* Debug */,
-				64A1971F1E07A7E100095CAA /* Release */,
+				6412694A1DBDA31500A7F514 /* Debug */,
+				6412694B1DBDA31500A7F514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64A197201E07A7E100095CAA /* Build configuration list for PBXNativeTarget "ExelBidSample" */ = {
+		6412694C1DBDA31500A7F514 /* Build configuration list for PBXNativeTarget "ExelbidSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64A197211E07A7E100095CAA /* Debug */,
-				64A197221E07A7E100095CAA /* Release */,
+				6412694D1DBDA31500A7F514 /* Debug */,
+				6412694E1DBDA31500A7F514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 64A197011E07A7E100095CAA /* Project object */;
+	rootObject = 6412692D1DBDA31500A7F514 /* Project object */;
 }

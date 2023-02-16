@@ -24,9 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    self.keywordsTextField.text = self.info.ID;
-    self.keywordsTextField.text = [EBConfig getBannerUnitId];
-    [self.loadAdButton.layer setCornerRadius:3.0f];
+    self.keywordsTextField.text = self.info.ID;
+   [self.loadAdButton.layer setCornerRadius:3.0f];
 
    
     
@@ -44,48 +43,119 @@
     }
     [_keywordsTextField resignFirstResponder];
     
-    [EBConfig setBannerUnitId:self.keywordsTextField.text];
-    
     self.adView = [[EBAdView alloc] initWithAdUnitId:self.keywordsTextField.text size:_adViewContainer.bounds.size];
     self.adView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     self.adView.delegate = self;
     [self.adView setYob:@"1976"];
     [self.adView setGender:@"M"];
-    [self.adView setTesting:NO];
     [self.adView setFullWebView:YES];
+    [self.adView setTesting:YES];
+    
     [_adViewContainer addSubview:self.adView];
-     [self.adView loadAd];
+    
+    [self.adView loadAd];
     
     _spinner.hidden = NO;
+}
+
+- (BOOL)shouldAutorotate{
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+// iOS7
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self.adView rotateToOrientation:toInterfaceOrientation];
+}
+
+- (void)setAdViewAutolayoutConstraint:(UIView *)target mine:(UIView *)_mine
+{
+    [target addSubview:_mine];
+    
+    [_mine setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [target addConstraint:[NSLayoutConstraint
+                           constraintWithItem:_mine
+                           attribute:NSLayoutAttributeTop
+                           relatedBy:NSLayoutRelationEqual
+                           toItem:target
+                           attribute:NSLayoutAttributeTop
+                           multiplier:1
+                           constant:0]];
+    
+    [target addConstraint:[NSLayoutConstraint
+                           constraintWithItem:_mine
+                           attribute:NSLayoutAttributeBottom
+                           relatedBy:NSLayoutRelationEqual
+                           toItem:target
+                           attribute:NSLayoutAttributeBottom
+                           multiplier:1
+                           constant:0]];
+    
+    [target addConstraint:[NSLayoutConstraint
+                           constraintWithItem:_mine
+                           attribute:NSLayoutAttributeLeading
+                           relatedBy:NSLayoutRelationEqual
+                           toItem:target
+                           attribute:NSLayoutAttributeLeading
+                           multiplier:1
+                           constant:0]];
+    
+    [target addConstraint:[NSLayoutConstraint
+                           constraintWithItem:_mine
+                           attribute:NSLayoutAttributeTrailing
+                           relatedBy:NSLayoutRelationEqual
+                           toItem:target
+                           attribute:NSLayoutAttributeTrailing
+                           multiplier:1
+                           constant:0]];
+    
+    CGFloat _height = 0.0f;
+    _height = 50.0f;
+    
+    [target addConstraint:[NSLayoutConstraint
+                           constraintWithItem:_mine
+                           attribute:NSLayoutAttributeHeight
+                           relatedBy:NSLayoutRelationEqual
+                           toItem:nil
+                           attribute:NSLayoutAttributeNotAnAttribute
+                           multiplier:1
+                           constant:_height]];
+    
+    [_mine setNeedsUpdateConstraints];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [_keywordsTextField resignFirstResponder];
 }
 
-#pragma mark-
-#pragma mark EBAdViewDelegate
 - (UIViewController *)viewControllerForPresentingModalView
 {
     return self;
 }
 
-//광고가 로딩된 시점에 호출 됩니다.
 - (void)adViewDidLoadAd:(EBAdView *)view
 {
     _spinner.hidden = YES;
 }
 
-//서버로부터 광고를 가져오지 못한 경우에 호출 됩니다.
 - (void)adViewDidFailToLoadAd:(EBAdView *)view
 {
     _spinner.hidden = YES;
 }
 
-//광고 클릭시 호출 됩니다.
 - (void)willLoadViewForAd:(EBAdView *)view {
     
 }
 
+- (void)didLoadViewForAd:(EBAdView *)view {
+    
+}
 
+- (void)willLeaveApplicationFromAd:(EBAdView *)view {
+    
+}
 @end

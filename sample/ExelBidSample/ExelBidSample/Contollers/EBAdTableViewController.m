@@ -16,6 +16,9 @@
 #import "EBNativeAdTableViewController.h"
 #import "EBNativeAdCollectionViewController.h"
 #import "EBDialogAdViewController.h"
+#import "EBMediationBannerAdViewController.h"
+#import "EBMediationNativeAdViewController.h"
+#import "EBMediationBizBoardViewController.h"
 
 
 @interface EBAdTableViewController ()
@@ -40,14 +43,14 @@
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-#endif    
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+#endif
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.sections = [EBAdSection adSections];
-    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,8 +87,17 @@
     }else if ([[segue identifier] isEqualToString:@"Dialog"]){
         EBDialogAdViewController *contoller = (EBDialogAdViewController *)[segue destinationViewController];
         contoller.info = info;
+    }else if ([[segue identifier] isEqualToString:@"MediationBanner"]){
+        EBMediationBannerAdViewController *contoller = (EBMediationBannerAdViewController *)[segue destinationViewController];
+        contoller.info = info;
+    }else if ([[segue identifier] isEqualToString:@"MediationNative"]){
+        EBMediationNativeAdViewController *contoller = (EBMediationNativeAdViewController *)[segue destinationViewController];
+        contoller.info = info;
+    }else if ([[segue identifier] isEqualToString:@"MediationBizboardView"]){
+        EBMediationBizBoardViewController *contoller = (EBMediationBizBoardViewController *)[segue destinationViewController];
+        contoller.info = info;
     }
-    
+
 }
 
 #pragma mark - Table view data source
@@ -151,6 +163,15 @@
             break;
         case EBAdInfoNativeTableViewPlacer:
             [self performSegueWithIdentifier:@"TableView" sender:indexPath];
+            break;
+        case EBAdInfoMediationBanner:
+            [self performSegueWithIdentifier:@"MediationBanner" sender:indexPath];
+            break;
+        case EBAdInfoMediationNative:
+            [self performSegueWithIdentifier:@"MediationNative" sender:indexPath];
+            break;
+        case EBAdInfoMediationBizboardView:
+            [self performSegueWithIdentifier:@"MediationBizboardView" sender:indexPath];
             break;
         default:
             break;

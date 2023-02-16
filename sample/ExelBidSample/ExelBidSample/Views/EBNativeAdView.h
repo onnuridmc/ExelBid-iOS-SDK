@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ExelBidSDK/ExelBidSDK.h>
+#import <ExelBidSDK/EBNativeAdRendering.h>
 
 @interface EBNativeAdView : UIView<EBNativeAdRendering>
 

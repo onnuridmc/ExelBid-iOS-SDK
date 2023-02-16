@@ -26,8 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-//    self.keywordsTextField.text = self.info.ID;
-    self.keywordsTextField.text = [EBConfig getNativeUnitId];
+    self.keywordsTextField.text = self.info.ID;
     [self.loadAdButton.layer setCornerRadius:3.0f];
 }
 
@@ -54,11 +53,9 @@
     [self.spinner setHidden:NO];
     [self clearAd];
     
-    [EBConfig setNativeUnitId:self.keywordsTextField.text];
-  
     // Create and configure a renderer configuration for native ads.
     [ExelBidNativeManager initNativeAdWithAdUnitIdentifier:self.keywordsTextField.text adViewClass:[EBNativeBannerAdView class]];
-//    [ExelBidNativeManager testing:YES];
+    [ExelBidNativeManager testing:YES];
     [ExelBidNativeManager yob:@"1976"];
     [ExelBidNativeManager gender:@"M"];
     
@@ -98,10 +95,6 @@
 {
     self.loadAdButton.enabled = YES;
     self.failLabel.hidden = NO;
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [_keywordsTextField resignFirstResponder];
 }
 
 #pragma mark - UITextFieldDelegate

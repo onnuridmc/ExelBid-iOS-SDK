@@ -65,7 +65,7 @@
     self.titleLabel.frame = CGRectMake(20, 210, 250, 30);
     self.mainTextLabel.frame = CGRectMake(20, 240, 300, 30);
     self.ctaLabel.frame = CGRectMake(20, 280, width - 40, 40);
-    self.privacyInformationIconImageView.frame = CGRectMake(width - 30, 210, 20, 20);
+    self.privacyInformationIconImageView.frame = CGRectMake(width - 35, 210, 25, 25);
     
     [self.ctaLabel.layer setCornerRadius:5.0f];
 }

@@ -26,10 +26,11 @@
 + (NSArray *)bannerAds
 {
     NSMutableArray *ads = [NSMutableArray array];
+    
     [ads addObjectsFromArray:@[
-                               [EBAdInfo infoWithTitle:@"배너광고" ID:[EBConfig getBannerUnitId] type:EBAdInfoBanner],
-                               [EBAdInfo infoWithTitle:@"전면광고" ID:[EBConfig getFrontBannerUnitId] type:EBAdInfoAllBanner],
-                               [EBAdInfo infoWithTitle:@"다이얼로그광고" ID:[NSString stringWithFormat:@"%@,%@",[EBConfig getFrontBannerUnitId],[EBConfig getNativeUnitId]] type:EBAdInfoDailBanner],
+                               [EBAdInfo infoWithTitle:@"배너광고" ID:@"d7865ee82b3a1a54f8beaddf817acb975098f312" type:EBAdInfoBanner],
+                               [EBAdInfo infoWithTitle:@"전면광고" ID:@"196b7524e0682351c794650dcb35dc7a032c7fab" type:EBAdInfoAllBanner],
+                               [EBAdInfo infoWithTitle:@"다이얼로그광고" ID:@"196b7524e0682351c794650dcb35dc7a032c7fab,e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoDailBanner],
                                ]];
     
     return ads;
@@ -38,10 +39,19 @@
 + (NSArray *)nativeAds
 {
     return @[
-             [EBAdInfo infoWithTitle:@"네이티브" ID:[EBConfig getNativeUnitId] type:EBAdInfoNative],
-             [EBAdInfo infoWithTitle:@"네이티브 Banner" ID:[EBConfig getNativeUnitId] type:EBAdInfoNativeBanner],
-             [EBAdInfo infoWithTitle:@"네이티브 Ad (CollectionView)" ID:[EBConfig getNativeUnitId] type:EBAdInfoNativeInCollectionView],
-             [EBAdInfo infoWithTitle:@"네이티브 Ad (TableView)" ID:[EBConfig getNativeUnitId] type:EBAdInfoNativeTableViewPlacer],
+             [EBAdInfo infoWithTitle:@"네이티브" ID:@"e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoNative],
+             [EBAdInfo infoWithTitle:@"네이티브 Banner" ID:@"e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoNativeBanner],
+             [EBAdInfo infoWithTitle:@"네이티브 Ad (CollectionView)" ID:@"e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoNativeInCollectionView],
+             [EBAdInfo infoWithTitle:@"네이티브 Ad (TableView)" ID:@"e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoNativeTableViewPlacer],
+             ];
+}
+
++ (NSArray *)etcAds
+{
+    return @[
+             [EBAdInfo infoWithTitle:@"미디에이션 Banner" ID:@"d7865ee82b3a1a54f8beaddf817acb975098f312" type:EBAdInfoMediationBanner],
+             [EBAdInfo infoWithTitle:@"미디에이션 Native" ID:@"e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoMediationNative],
+             [EBAdInfo infoWithTitle:@"미디에이션 BizboardView" ID:@"e7ae59cf167c7b6c0fd3f71f329a22826ddb6b0d" type:EBAdInfoMediationBizboardView]
              ];
 }
 

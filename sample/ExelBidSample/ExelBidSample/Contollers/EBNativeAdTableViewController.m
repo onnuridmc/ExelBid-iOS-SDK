@@ -65,10 +65,16 @@ static NSString *kDefaultCellIdentifier = @"ExelBidSampleAppTableViewAdPlacerCel
     // Create a targeting object to serve better ads.
     EBNativeAdRequestTargeting *targeting = [EBNativeAdRequestTargeting targeting];
     targeting.location = [[CLLocation alloc] initWithLatitude:37.7793 longitude:-122.4175];
-    targeting.desiredAssets = [NSSet setWithObjects:kAdIconImageKey, kAdMainImageKey, kAdCTATextKey, kAdTextKey, kAdTitleKey, nil];
-//    targeting.testing = YES;
+    targeting.desiredAssets = [NSSet setWithObjects:kAdIconImageKey,
+                               kAdMainImageKey,
+                               kAdCTATextKey,
+                               kAdTextKey,
+                               kAdTitleKey,
+                               nil];
+    targeting.testing = YES;
     [targeting setYob:@"1976"];
     [targeting setGender:@"M"];
+    [targeting setTesting:YES];
     
     // Create and configure a renderer configuration.
     
@@ -84,25 +90,21 @@ static NSString *kDefaultCellIdentifier = @"ExelBidSampleAppTableViewAdPlacerCel
     self.placer = [EBTableViewAdPlacer placerWithTableView:self.tableView viewController:self rendererConfigurations:@[nativeAdConfig]];
     self.placer.delegate = self;
     // Load ads (using a test ad unit ID). Feel free to replace this ad unit ID with your own.
-//    [self.placer loadAdsForAdUnitID:self.info.ID targeting:targeting];
-    [self.placer loadAdsForAdUnitID:[EBConfig getNativeUnitId] targeting:targeting];
+    [self.placer loadAdsForAdUnitID:self.info.ID targeting:targeting];
 }
 
 #pragma mark - UITableViewAdPlacerDelegate
 
-//광고 클릭시 호출 됩니다.
 - (void)nativeAdWillLoadForTableViewAdPlacer:(EBTableViewAdPlacer *)placer
 {
     NSLog(@"Table view ad placer will Load.");
 }
 
-//광고 이동 완료시 호출 됩니다.
 - (void)nativeAdDidLoadForTableViewAdPlacer:(EBTableViewAdPlacer *)placer
 {
     NSLog(@"Table view ad placer did Load.");
 }
 
-//광고로 이동시 호출 됩니다.
 - (void)nativeAdWillLeaveApplicationFromTableViewAdPlacer:(EBTableViewAdPlacer *)placer
 {
     NSLog(@"Table view ad placer will leave application.");

@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+#platform :ios, '9.0'
 
-target 'ExelBidSample' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+target 'ExelbidSample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
-  # Pods for ExelBidSample
+  # Pods for ExelbidSample
 
-
-pod “ExelBid_iOS”
+  pod 'ExelBid_iOS', '~> 1.3.16'
+  pod 'AdFitSDK', '~> 3.12.18'
 
 end

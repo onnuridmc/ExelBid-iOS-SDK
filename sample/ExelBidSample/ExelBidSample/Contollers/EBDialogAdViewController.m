@@ -44,10 +44,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    self.keywordsTextField1.text = [self.info.ID componentsSeparatedByString:@","][0] ;
-//    self.keywordsTextField2.text = [self.info.ID componentsSeparatedByString:@","][1] ;
-    self.keywordsTextField1.text = [EBConfig getFrontBannerUnitId];
-    self.keywordsTextField2.text = [EBConfig getNativeUnitId];
+    self.keywordsTextField1.text = [self.info.ID componentsSeparatedByString:@","][0] ;
+    self.keywordsTextField2.text = [self.info.ID componentsSeparatedByString:@","][1] ;
     [self.loadHTMLAdButton.layer setCornerRadius:3.0f];
     [self.showHTMLAdButton.layer setCornerRadius:3.0f];
     [self.loadNativeAdButton1.layer setCornerRadius:3.0f];
@@ -80,14 +78,12 @@
         [self.adView removeFromSuperview];
     }
     
-    [EBConfig setFrontBannerUnitId:self.keywordsTextField1.text];
-    
     self.adView = [[EBAdView alloc] initWithAdUnitId:self.keywordsTextField1.text size:self.htmlDialogView.adView.bounds.size];
     self.adView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     self.adView.delegate = self;
     [self.adView setYob:@"1976"];
     [self.adView setGender:@"M"];
-//    [self.adView setTesting:YES];
+    [self.adView setTesting:YES];
     [self.htmlDialogView.adView addSubview:self.adView];
     [self.adView loadAd];
 }
@@ -144,9 +140,6 @@
 }
 
 - (void)nativeAdLoad:(NSInteger)type {
-    
-    [EBConfig setNativeUnitId:self.keywordsTextField2.text];
-    
     // Create and configure a renderer configuration for native ads.
     EBStaticNativeAdRendererSettings *settings = [[EBStaticNativeAdRendererSettings alloc] init];
     if (type == 1) {
@@ -154,14 +147,13 @@
     }else{
         settings.renderingViewClass = [EBNativeAd2View class];
     }
-    
    
     EBNativeAdRendererConfiguration *config = [EBStaticNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
     
     
     EBNativeAdRequest *adRequest = [EBNativeAdRequest requestWithAdUnitIdentifier:self.keywordsTextField2.text rendererConfigurations:@[config]];
     EBNativeAdRequestTargeting *targeting = [[EBNativeAdRequestTargeting alloc] init];
-//    targeting.testing = YES;
+    targeting.testing = YES;
     [targeting setYob:@"1976"];
     [targeting setGender:@"M"];
     adRequest.targeting = targeting;
@@ -237,7 +229,6 @@
     self.loadHTMLAdButton.enabled = YES;
     self.failLabel.hidden = NO;
 }
-
 
 #pragma mark - EBNativeAdDelegate
 

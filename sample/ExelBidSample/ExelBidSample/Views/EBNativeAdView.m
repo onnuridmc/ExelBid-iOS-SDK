@@ -60,7 +60,7 @@
     
     self.titleLabel.frame = CGRectMake(75, 10, 212, 60);
     self.iconImageView.frame = CGRectMake(10, 10, 60, 60);
-    self.privacyInformationIconImageView.frame = CGRectMake(width - 30, 10, 20, 20);
+    self.privacyInformationIconImageView.frame = CGRectMake(width - 35, 10, 25, 25);
     self.ctaLabel.frame = CGRectMake(width - 100, 280, 90, 40);
     self.mainTextLabel.frame = CGRectMake(width / 2 - 150, 68, 300, 50);
     self.mainImageView.frame = CGRectMake(width / 2 - 150, 119, 300, 156);

@@ -61,7 +61,7 @@ static NSString *const kReuseIdentifier = @"cell";
     EBNativeAdRequestTargeting *targeting = [EBNativeAdRequestTargeting targeting];
     targeting.desiredAssets = [NSSet setWithObjects:kAdTitleKey, kAdIconImageKey, kAdCTATextKey, nil];
     targeting.location = [[CLLocation alloc] initWithLatitude:37.7793 longitude:-122.4175];
-//    targeting.testing = YES;
+    targeting.testing = YES;
     [targeting setYob:@"1976"];
     [targeting setGender:@"M"];
     
@@ -91,25 +91,21 @@ static NSString *const kReuseIdentifier = @"cell";
     
     self.placer.delegate = self;
     // Load ads (using a test ad unit ID). Feel free to replace this ad unit ID with your own.
-//    [self.placer loadAdsForAdUnitID:self.info.ID targeting:targeting];
-    [self.placer loadAdsForAdUnitID:[EBConfig getNativeUnitId] targeting:targeting];
+    [self.placer loadAdsForAdUnitID:self.info.ID targeting:targeting];
 }
 
 #pragma mark - <EBCollectionViewAdPlacerDelegate>
 
-//광고 클릭시 호출 됩니다.
 - (void)nativeAdWillLoadForCollectionViewAdPlacer:(EBCollectionViewAdPlacer *)placer
 {
     NSLog(@"Collection view ad placer will Load.");
 }
 
-//광고 이동 완료시 호출 됩니다.
 - (void)nativeAdDidLoadForCollectionViewAdPlacer:(EBCollectionViewAdPlacer *)placer
 {
     NSLog(@"Collection view ad placer did Load.");
 }
 
-//광고로 이동시 호출 됩니다.
 - (void)nativeAdWillLeaveApplicationFromCollectionViewAdPlacer:(EBCollectionViewAdPlacer *)placer
 {
     NSLog(@"Collection view ad placer will leave application.");

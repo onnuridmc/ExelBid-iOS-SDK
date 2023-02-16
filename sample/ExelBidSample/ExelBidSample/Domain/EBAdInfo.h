@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "EBConfig.h"
-
 typedef NS_ENUM(NSInteger, EBAdInfoType) {
     EBAdInfoBanner,
     EBAdInfoAllBanner,
@@ -18,7 +16,10 @@ typedef NS_ENUM(NSInteger, EBAdInfoType) {
     EBAdInfoNativeBanner,
     EBAdInfoNativeTableViewPlacer,
     EBAdInfoNativeInCollectionView,
-    EBAdInfoRewardedVideo
+    EBAdInfoRewardedVideo,
+    EBAdInfoMediationBanner,
+    EBAdInfoMediationNative,
+    EBAdInfoMediationBizboardView
 };
 
 @interface EBAdInfo : NSObject
@@ -30,6 +31,7 @@ typedef NS_ENUM(NSInteger, EBAdInfoType) {
 
 + (NSArray *)bannerAds;
 + (NSArray *)nativeAds;
++ (NSArray *)etcAds;
 + (EBAdInfo *)infoWithTitle:(NSString *)title ID:(NSString *)ID type:(EBAdInfoType)type;
 + (NSDictionary *)supportedAddedAdTypes;
 

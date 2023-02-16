@@ -6,10 +6,10 @@
 //  Copyright © 2016년 Zionbi. All rights reserved.
 //
 
+#import <ExelBidSDK/ExelBidSDK.h>
+
 #import "EBNativeAdViewController.h"
 #import "EBNativeAdView.h"
-
-#import <ExelBidSDK/ExelBidSDK.h>
 
 @interface EBNativeAdViewController ()<UITextFieldDelegate, EBNativeAdDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *keywordsTextField;
@@ -25,8 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-//    self.keywordsTextField.text = self.info.ID;
-    self.keywordsTextField.text = [EBConfig getNativeUnitId];
+    self.keywordsTextField.text = self.info.ID;
     [self.loadAdButton.layer setCornerRadius:3.0f];
 }
 
@@ -54,11 +53,9 @@
     [self.spinner setHidden:NO];
     [self clearAd];
 
-    [EBConfig setNativeUnitId:self.keywordsTextField.text];
-    
     // Create and configure a renderer configuration for native ads.
     [ExelBidNativeManager initNativeAdWithAdUnitIdentifier:self.keywordsTextField.text adViewClass:[EBNativeAdView class]];
-//    [ExelBidNativeManager testing:YES];
+    [ExelBidNativeManager testing:YES];
     [ExelBidNativeManager yob:@"1976"];
     [ExelBidNativeManager gender:@"M"];
     
@@ -100,10 +97,6 @@
     self.failLabel.hidden = NO;
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [_keywordsTextField resignFirstResponder];
-}
-
 #pragma mark - UITextFieldDelegate
 
 
@@ -116,19 +109,16 @@
 
 #pragma mark - EBNativeAdDelegate
 
-//광고 클릭시 호출 됩니다.
 - (void)willLoadForNativeAd:(EBNativeAd *)nativeAd
 {
     NSLog(@"Will Load for native ad.");
 }
 
-//광고 이동 완료시 호출 됩니다.
 - (void)didLoadForNativeAd:(EBNativeAd *)nativeAd
 {
     NSLog(@"Did Load for native ad.");
 }
 
-//광고로 이동시 호출 됩니다.
 - (void)willLeaveApplicationFromNativeAd:(EBNativeAd *)nativeAd
 {
     NSLog(@"Will leave application from native ad.");

@@ -24,7 +24,7 @@
         [self.iconImageView setContentMode:UIViewContentModeScaleAspectFill];
         [self addSubview:self.iconImageView];
         
-        self.privacyInformationIconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(60, 5, 8, 8)];
+        self.privacyInformationIconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(56, 5, 12, 12)];
         [self addSubview:self.privacyInformationIconImageView];
         
         self.ctaLabel = [[UILabel alloc] initWithFrame:CGRectMake(2, 94, 66, 15)];

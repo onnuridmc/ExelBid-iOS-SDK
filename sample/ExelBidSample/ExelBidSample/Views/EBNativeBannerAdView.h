@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ExelBidSDK/EBNativeAdRendering.h>
+#import <ExelBidSDK/ExelBidSDK.h>
 
 @interface EBNativeBannerAdView : UIView<EBNativeAdRendering>
 @property (strong, nonatomic) UILabel *titleLabel;
