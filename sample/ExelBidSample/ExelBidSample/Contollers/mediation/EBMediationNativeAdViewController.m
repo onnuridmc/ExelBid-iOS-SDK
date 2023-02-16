@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) EBMediationInfo *mediationInfo;
 @property (nonatomic, strong) EBNativeAd *nativeAd;
+@property (nonatomic, strong) AdFitNativeAd *afNativeAd;
 @property (nonatomic, strong) AdFitNativeAdLoader *afLoader;
 
 @end
@@ -94,7 +95,7 @@
         // ExelBid 미디에이션 순서대로 가져오기 (더이상 없으면 nil)
         EBMediation *mediation = [self.mediationInfo next];
         
-        self.logView.text = [NSString stringWithFormat:@"%@\nMediation Id : %@", self.logView.text, mediation.type];
+        self.logView.text = [NSString stringWithFormat:@"%@\nMediation Id : %@, Unit Id : %@", self.logView.text, mediation.type, mediation.unit_id];
         
         if ([mediation.type isEqualToString:EBMediationTypeExelbid]) {
             [self loadExelBid:mediation];
@@ -145,6 +146,8 @@
 {
     self.afLoader = [[AdFitNativeAdLoader alloc] initWithClientId:mediation.unit_id count:1];
     self.afLoader.delegate = self;
+    self.afLoader.infoIconPosition = AdFitInfoIconPositionTopRight;
+    
     [self.afLoader loadAdWithKeyword:nil];
 }
 
@@ -185,9 +188,26 @@
 - (void)nativeAdLoaderDidReceiveAd:(AdFitNativeAd *)nativeAd
 {
     NSLog(@"Adfit - nativeAdLoaderDidReceiveAd");
-    EBAdFitNativeAdView *nativeAdView = [[EBAdFitNativeAdView alloc] initWithFrame:CGRectMake(0.f, 0.f, 300.f, 200.f)];
+    
+    self.afNativeAd = nativeAd;
+    
+    EBAdFitNativeAdView *nativeAdView = [[[NSBundle mainBundle] loadNibNamed:@"EBAdFitNativeAdView" owner:self options:nil] firstObject];
+    
+//    EBAdFitNativeAdView *nativeAdView = [[EBAdFitNativeAdView alloc] initWithFrame:CGRectMake(0.f, 0.f, 300.f, 200.f)];
     [nativeAd bind:nativeAdView];
     [self.adViewContainer addSubview:nativeAdView];
+    
+//    UINib *nib = [UINib nibWithNibName:@"EBAdFitNativeAdView" bundle:nil];
+//
+//    if (nib == nil) {
+//        NSLog(@"nativeAdLoaderDidReceiveAd - load view");
+//
+//    } else {
+//        NSLog(@"nativeAdLoaderDidReceiveAd - load nib");
+//        EBAdFitNativeAdView *nativeAdView = [[nib instantiateWithOwner:nil options:nil] firstObject];
+//        [nativeAd bind:nativeAdView];
+//        [self.adViewContainer addSubview:nativeAdView];
+//    }
 }
 
 - (void)nativeAdLoaderDidReceiveAds:(NSArray<AdFitNativeAd *> *)nativeAds

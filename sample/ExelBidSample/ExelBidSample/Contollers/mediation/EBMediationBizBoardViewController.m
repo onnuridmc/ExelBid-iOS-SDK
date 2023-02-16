@@ -20,8 +20,9 @@
 
 @property (nonatomic, strong) EBMediationInfo *mediationInfo;
 @property (nonatomic, strong) EBNativeAd *nativeAd;
-@property (nonatomic, strong) BizBoardTemplate *afNativeAdView;
 @property (nonatomic, strong) AdFitNativeAdLoader *afLoader;
+@property (nonatomic, strong) AdFitNativeAd *afNativeAd;
+@property (nonatomic, strong) BizBoardTemplate *afNativeAdView;
 
 @end
 
@@ -97,7 +98,7 @@
         // ExelBid 미디에이션 순서대로 가져오기 (더이상 없으면 nil)
         EBMediation *mediation = [self.mediationInfo next];
         
-        self.logView.text = [NSString stringWithFormat:@"%@\nMediation Id : %@", self.logView.text, mediation.type];
+        self.logView.text = [NSString stringWithFormat:@"%@\nMediation Id : %@, Unit Id : %@", self.logView.text, mediation.type, mediation.unit_id];
         
         if ([mediation.type isEqualToString:EBMediationTypeExelbid]) {
             [self loadExelBid:mediation];
@@ -159,7 +160,7 @@
     double viewHeight = bizBoardHeight + topBottomMargin; // 비즈보드 높이에서 상하 마진값을 더해주면 실제 그려줄 뷰의 높이를 알 수 있다.
     
     self.afNativeAdView.frame = CGRectMake(0, 0, viewWidth, viewHeight);
-        
+    
     [self.adViewContainer addSubview:self.afNativeAdView];
     
     self.afLoader = [[AdFitNativeAdLoader alloc] initWithClientId:mediation.unit_id count:1];
@@ -203,12 +204,27 @@
 
 #pragma mark - AdFitNativeAdDelegate
 
+- (void)viewSafeAreaInsetsDidChange
+{
+    [super viewSafeAreaInsetsDidChange];
+        
+    CGRect frame = self.afNativeAdView.frame;
+    frame.origin = self.view.safeAreaLayoutGuide.layoutFrame.origin;
+    [self.afNativeAdView setFrame:frame];
+}
+
 - (void)nativeAdLoaderDidReceiveAd:(AdFitNativeAd *)nativeAd
 {
     NSLog(@"Adfit - nativeAdLoaderDidReceiveAd");
-    EBAdFitNativeAdView *nativeAdView = [[EBAdFitNativeAdView alloc] initWithFrame:CGRectMake(0.f, 0.f, 300.f, 200.f)];
-    [nativeAd bind:nativeAdView];
-    [self.adViewContainer addSubview:nativeAdView];
+    
+    self.afNativeAd = nativeAd;
+    
+    //인포아이콘 조정은 바인드 전에 이뤄줘야 한다.
+    self.afNativeAd.infoIconRightConstant = -20; //인포아이콘을 우에서 좌로 20
+    self.afNativeAd.infoIconTopConstant = 5; //인포아이콘을 위에서 아래로 5만큼 이동
+
+    [self.afNativeAd bind:self.afNativeAdView];
+    self.afNativeAd.delegate = self;
 }
 
 - (void)nativeAdLoaderDidReceiveAds:(NSArray<AdFitNativeAd *> *)nativeAds

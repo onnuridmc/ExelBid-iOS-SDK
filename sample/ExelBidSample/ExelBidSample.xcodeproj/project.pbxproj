@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CCD6C42C080517E08A602F8 /* Pods_ExelbidSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B73016D9B9E482E98F4705 /* Pods_ExelbidSample.framework */; };
 		1D29554E299B4E1E00D39514 /* EBAdFitNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29554D299B4E1E00D39514 /* EBAdFitNativeAdView.m */; };
 		1D295552299B4FCD00D39514 /* EBMediationBizBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D295551299B4FCD00D39514 /* EBMediationBizBoardViewController.m */; };
 		1D8287442994DFD200F22178 /* EBMediationBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8287432994DFD200F22178 /* EBMediationBannerAdViewController.m */; };
 		1D93FC37299A0BFB00E4F103 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D93FC32299A004800E4F103 /* AppTrackingTransparency.framework */; };
-		1D93FC3E299A296A00E4F103 /* Pods_ExelbidSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CC621707BB53BF26CF57F1 /* Pods_ExelbidSample.framework */; };
 		1DBADE66299B29120054FD2A /* EBMediationNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBADE65299B29120054FD2A /* EBMediationNativeAdViewController.m */; };
 		6412693A1DBDA31500A7F514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 641269391DBDA31500A7F514 /* main.m */; };
 		6412693D1DBDA31500A7F514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412693C1DBDA31500A7F514 /* AppDelegate.m */; };
@@ -39,7 +39,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08CC621707BB53BF26CF57F1 /* Pods_ExelbidSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExelbidSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D29554D299B4E1E00D39514 /* EBAdFitNativeAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBAdFitNativeAdView.m; sourceTree = "<group>"; };
 		1D29554F299B4E2400D39514 /* EBAdFitNativeAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBAdFitNativeAdView.h; sourceTree = "<group>"; };
 		1D295550299B4FCD00D39514 /* EBMediationBizBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMediationBizBoardViewController.h; sourceTree = "<group>"; };
@@ -47,11 +46,6 @@
 		1D8287432994DFD200F22178 /* EBMediationBannerAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBMediationBannerAdViewController.m; sourceTree = "<group>"; };
 		1D8287452994DFE200F22178 /* EBMediationBannerAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMediationBannerAdViewController.h; sourceTree = "<group>"; };
 		1D93FC32299A004800E4F103 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
-		1D945FB1299C9FB300B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
-		1D945FB4299CC98100B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
-		1D945FB8299CCB8C00B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
-		1D945FBC299CCCC400B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ExelBidSDK.xcframework; sourceTree = "<group>"; };
-		1D945FC0299CCDDE00B05517 /* ExelBidSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ExelBidSDK.xcframework; path = "../ExelBid-iOS-SDK/ExelBidSDK.xcframework"; sourceTree = "<group>"; };
 		1DBADE64299B29120054FD2A /* EBMediationNativeAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBMediationNativeAdViewController.h; sourceTree = "<group>"; };
 		1DBADE65299B29120054FD2A /* EBMediationNativeAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBMediationNativeAdViewController.m; sourceTree = "<group>"; };
 		641269351DBDA31500A7F514 /* ExelbidSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExelbidSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +93,7 @@
 		64DF9BAC1DCC4C0000836561 /* EBFrontBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFrontBannerAdViewController.h; sourceTree = "<group>"; };
 		64DF9BAD1DCC4C0000836561 /* EBFrontBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBFrontBannerAdViewController.m; sourceTree = "<group>"; };
 		B651AE69B6D1B2147797B0C7 /* Pods-ExelbidSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExelbidSample.debug.xcconfig"; path = "Target Support Files/Pods-ExelbidSample/Pods-ExelbidSample.debug.xcconfig"; sourceTree = "<group>"; };
+		E4B73016D9B9E482E98F4705 /* Pods_ExelbidSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExelbidSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E517D22C82DD38514CFE8C5E /* Pods-ExelbidSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExelbidSample.release.xcconfig"; path = "Target Support Files/Pods-ExelbidSample/Pods-ExelbidSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D93FC3E299A296A00E4F103 /* Pods_ExelbidSample.framework in Frameworks */,
 				1D93FC37299A0BFB00E4F103 /* AppTrackingTransparency.framework in Frameworks */,
+				1CCD6C42C080517E08A602F8 /* Pods_ExelbidSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,13 +113,8 @@
 		1D93FC31299A004800E4F103 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D945FB1299C9FB300B05517 /* ExelBidSDK.xcframework */,
-				1D945FB4299CC98100B05517 /* ExelBidSDK.xcframework */,
-				1D945FB8299CCB8C00B05517 /* ExelBidSDK.xcframework */,
-				1D945FBC299CCCC400B05517 /* ExelBidSDK.xcframework */,
-				1D945FC0299CCDDE00B05517 /* ExelBidSDK.xcframework */,
 				1D93FC32299A004800E4F103 /* AppTrackingTransparency.framework */,
-				08CC621707BB53BF26CF57F1 /* Pods_ExelbidSample.framework */,
+				E4B73016D9B9E482E98F4705 /* Pods_ExelbidSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,7 +255,7 @@
 				641269311DBDA31500A7F514 /* Sources */,
 				641269321DBDA31500A7F514 /* Frameworks */,
 				641269331DBDA31500A7F514 /* Resources */,
-				49585CB53690479124D7C3A3 /* [CP] Embed Pods Frameworks */,
+				7F2DB0FB012C13C049EE08CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +277,7 @@
 				TargetAttributes = {
 					641269341DBDA31500A7F514 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = N8654MDDQ5;
 					};
 				};
 			};
@@ -323,7 +314,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		49585CB53690479124D7C3A3 /* [CP] Embed Pods Frameworks */ = {
+		7F2DB0FB012C13C049EE08CC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,7 +499,7 @@
 			baseConfigurationReference = B651AE69B6D1B2147797B0C7 /* Pods-ExelbidSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N8654MDDQ5;
 				EXCLUDED_ARCHS = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ExelbidSample/Info.plist;
@@ -529,7 +520,7 @@
 			baseConfigurationReference = E517D22C82DD38514CFE8C5E /* Pods-ExelbidSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N8654MDDQ5;
 				EXCLUDED_ARCHS = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ExelbidSample/Info.plist;

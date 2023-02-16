@@ -9,7 +9,6 @@
 #import "EBNativeAdTableViewController.h"
 
 #import "EBTableViewAdPlacerView.h"
-#import <ExelBidSDK/ExelBidSDK.h>
 #import <CoreLocation/CoreLocation.h>
 
 static NSString *kDefaultCellIdentifier = @"ExelBidSampleAppTableViewAdPlacerCell";

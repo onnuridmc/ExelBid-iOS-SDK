@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     
     [ExelBidKit setEBAppId:@"647e170e"];
+//    [ExelBidKit setEBAppId:@"19f8f833"];
     return YES;
 }
 
