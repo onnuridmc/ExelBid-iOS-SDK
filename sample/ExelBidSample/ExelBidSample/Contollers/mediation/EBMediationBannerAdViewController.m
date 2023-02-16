@@ -34,6 +34,15 @@
     self.keywordsTextField.text = self.info.ID;
     [self.loadAdButton.layer setCornerRadius:3.0f];
     [self.showAdButton.layer setCornerRadius:3.0f];
+    
+    // 광고 요청하기 전에 사용자로 부터 개인정보 보호에 관한 권한을 요청해야 합니다.
+    // (앱이 설치되고 한번만 호출하면 되며, 아래 코드는 사용자가 권한에 대한 응답 후에는 더 이상 사용자에게 권한을 묻지 않습니다.)
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            // 권한 요청이 완료된 다음, 광고를 요청해 주세요.
+            // loadAd()
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,22 +103,12 @@
         // ExelBid 미디에이션 순서대로 가져오기 (더이상 없으면 nil)
         EBMediation *mediation = [self.mediationInfo next];
         
-        self.logView.text = [NSString stringWithFormat:@"%@\nMediation Id : %@", self.logView.text, mediation.type];
+        self.logView.text = [NSString stringWithFormat:@"%@\nMediation Id : %@, Unit Id : %@", self.logView.text, mediation.type, mediation.unit_id];
         
         if ([mediation.type isEqualToString:EBMediationTypeExelbid]) {
             [self loadExelBid:mediation];
         } else if ([mediation.type isEqualToString:EBMediationTypeAdfit]) {
-            // 광고 요청하기 전에 사용자로 부터 개인정보 보호에 관한 권한을 요청해야 합니다.
-            // (앱이 설치되고 한번만 호출하면 되며, 아래 코드는 사용자가 권한에 대한 응답 후에는 더 이상 사용자에게 권한을 묻지 않습니다.)
-            if (@available(iOS 14, *)) {
-                [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-                    // 권한 요청이 완료된 다음, 광고를 요청해 주세요.
-                    // loadAd()
-                    [self loadAdFit:mediation];
-                }];
-            } else {
-                [self loadAdFit:mediation];
-            }
+            [self loadAdFit:mediation];
         }
     }
 }
