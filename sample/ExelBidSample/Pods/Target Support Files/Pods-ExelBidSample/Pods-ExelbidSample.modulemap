@@ -1,6 +1,0 @@
-framework module Pods_ExelbidSample {
-  umbrella header "Pods-ExelbidSample-umbrella.h"
-
-  export *
-  module * { export * }
-}

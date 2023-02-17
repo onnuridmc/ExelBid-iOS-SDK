@@ -1,6 +1,0 @@
-framework module ExelBidSDK {
-  umbrella header "ExelBidSDK.h"
-
-  export *
-  module * { export * }
-}
