@@ -153,8 +153,8 @@ self.adView.delegate = self;
 > EBAdViewDelegate Protocol Reference
 > ```
 > - (void)adViewDidLoadAd:(EBAdView *)view        // 광고가 로딩된 시점에 호출 됩니다.
-> - (void)adViewDidFailToLoadAd:(EBAdView *)view	// 서버로부터 광고를 가져오지 못한 경우에 호출 됩니다.
 > - (void)willLoadViewForAd:(EBAdView *)view      // 광고 클릭시 호출 됩니다.
+> - (void)adViewDidFailToLoadAd:(EBAdView *)view statusCode:(NSInteger)statusCode	// 서버로부터 광고를 가져오지 못한 경우에 호출 됩니다.
 > ```
 
 5. AdView 안에 너비 100%로 웹뷰가 바인딩되게 설정하려면 아래와 같이 메소드를 추가할 수 있습니다. (SDK Version. 1.3.2)
