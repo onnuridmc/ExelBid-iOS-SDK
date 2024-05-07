@@ -1,3 +1,13 @@
+# Exelbid SDK 2.x 업데이트 안내
+
+Exelbid SDK가 2.x로 업데이트 되었습니다.  
+1.x 버전의 업데이트는 더이상 지원하지 않습니다.
+
+자세한 내용은 아래 링크를 참고해주세요.  
+[https://github.com/onnuridmc/ExelBid_iOS_Swift](https://github.com/onnuridmc/ExelBid_iOS_Swift)
+
+---
+
 목차
 =================
 
